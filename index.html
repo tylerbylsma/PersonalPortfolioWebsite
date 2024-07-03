@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="personal-portfolio-img/images/Tyler_Logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi, I'm <span>Tyler Bylsma</span>, welcome to my personal portoflio page</h1>
+        </div>
+    </div>
+</div>
+<!-- ------------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="personal-portfolio-img/images/personal_photo2.JPG" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="sub-title-description">Hi, my name is Tyler Bylsma and I am a Computer Science student 
+                    at Calvin University. I am from Grand Rapids, Michigan, and have 
+                    also lived in Florida and Rhode Island. I am passionate about Computer Science,
+                    and specifically interested in fields such as Software Engineering,
+                    Cybersecurity, and Game Development. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Technical</span><br>Python, C++, C#, HTML, CSS, Java Script, Java</li>
+                        <li><span>General</span><br>Communication, Teamwork, Problem Solving, Organization</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Aug 2023 - Current</span><br>Rec Staff Member at Calvin University</li>
+                        <li><span>June 2022 - Aug 2022</span><br>Intern at Machine-Star</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2026</span><br>Bachelors in Computer Science, from Calvin University</li>
+                        <li><span>2018 - 2022</span><br>High School Degree, from South Christian High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Projects---------->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <p class="sub-title-description"> Fruit Ninja Game - Python - https://github.com/tylerbylsma/FruitNinja_Game </p>
+        <div class="project-list">
+            <div class="project">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------contact---------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>Email: tylerbylsma3@gmail.com</p>
+                <p>Phone Number: (616) - 469 - 4220</p>
+            </div>|
+            <div class="contact-right"></div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
