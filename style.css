@@ -166,7 +166,7 @@ nav ul li a:hover::after{
 
 #contact{
 }
-.contact.left-contact:link {
+a {
     color: blue;
     background-color: white;
 }
