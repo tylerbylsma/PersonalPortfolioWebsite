@@ -162,7 +162,13 @@ nav ul li a:hover::after{
 #projects{
     padding: 50px 0;
 }
+/*------------Contact---------*/
 
+#contact{
+    a:link {
+    color: blue;
+}
+}
 
 
 
