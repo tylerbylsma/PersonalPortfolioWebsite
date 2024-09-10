@@ -159,18 +159,31 @@ nav ul li a:hover::after{
 
 /*-------------projects--------- */
 
-#projects{
-    padding: 50px 0;
+#projects .sub-title-description{
+    padding: 15 0;
+    padding-left: 50px;
+    padding-right: 500px;
 }
+
+#projects .sub-title-description strong {
+    color: rgb(14, 240, 33);
+    font-size: 25px;
+}
+
 /*------------Contact---------*/
 
-#contact{
+#contact a {
+    padding: 25px 0;
+    color: rgb(236, 209, 120);
 }
-a {
-    color: blue;
-    background-color: white;
+#contact p {
+    padding: 15px 0;
+    font-size: 20px
 }
 
-
+#contact strong {
+    color: aqua;
+    padding-left: 50px;
+}
 
 
