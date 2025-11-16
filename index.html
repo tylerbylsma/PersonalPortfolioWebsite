@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Bylsma - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="personal-portfolio-img/images/Tyler_Logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi, I'm <span>Tyler Bylsma</span></h1>
+            <h2>Welcome to my personal portfolio</h2>
+            <div class="header-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------about---------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="personal-portfolio-img/images/personal_photo2.JPG" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="sub-title-description">Hi, my name is Tyler Bylsma and I am a Senior studying Computer Science 
+                    at Calvin University. I am from Grand Rapids, Michigan,
+                    and I am passionate about Computer Science.
+                    Specifically, I have experience in Software Development,
+                    Front-End Development, and Application Development. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Technical</span><br>Python, HTML, CSS, Javascript, SQL, React, NextJS</li>
+                        <li><span>General</span><br>Communication, Teamwork, Problem Solving, Organization</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Application Developer Intern | SpartanNash | May 2025 - August 2025</span><br>●
+                            ‬‭ Developed a full stack application using Next.js, Flask, and SQLite on a Raspberry Pi to‬
+                            ‭ display real-time e-commerce pickup orders for in-store associates.‬
+                            ●
+                            ‬‭ Engineered backend APIs in Flask, designed UI in Next.js, and implemented database logic‬
+                            ‭ with SQLite.‬
+                            ●
+                            ‬‭ Wrote Python scripts to automate SQL database maintenance and data syncing tasks.‬
+                            ‭</li>
+                        <li><span>July 2024 - April 2025</span><br>Fulfillment Specialist at Tekton</li>
+                        <li><span>Aug 2023 - May 2024</span><br>Rec Staff Member at Calvin University</li>
+                        <li><span>June 2022 - Aug 2022</span><br>Intern at Machine-Star</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2026</span><br>Bachelors in Computer Science (BCS) and Minor in Data Science, from Calvin University</li>
+                        <li><span>2018 - 2022</span><br>High School Degree, from South Christian High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Projects---------->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <p class="sub-title-description">Here are some of my recent projects and work</p>
+        <div class="project-list">
+            <div class="project">
+                <div class="project-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <h3>Fruit Ninja Game</h3>
+                <p>A game project created during my freshman year of college. Inspired by the popular Fruit Ninja game, this project was built using Python with guizero implementations to create the game window and customize gameplay mechanics.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">guizero</span>
+                    <span class="tech-tag">Game Development</span>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Project Pulse - A Full Stack Web Application</h3>
+                <p>This project is a full stack application that I built using Next.js, Flask, and SQLite. It is a dashboard that displays real-time e-commerce pickup orders for in-store associates at the retail stores.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">NextJS</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">SQLite</span>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Calvin Clean - A Full Stack Mobile Application</h3>
+                <p>This project is a full stack mobile application that I built with a team of 5 other students using React Native and Firebase. This application istargeted towards Calvin University students to allow them to see what washers and dryers are available in the dorm laundry rooms.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">NextJS</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">SQLite</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------contact---------->
+
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <p class="sub-title-description">Feel free to reach out! I'm always open to discussing new opportunities.</p>
+        <div class="row">
+            <div class="contact-left">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:tylerbylsma3@gmail.com">tylerbylsma3@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+16164694220">(616) 469-4220</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/tylerbylsma" target="_blank">github.com/tylerbylsma</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/tyler-bylsma-88997728b/" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Footer---------->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Tyler Bylsma. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/tylerbylsma" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tyler-bylsma-88997728b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Form submission handling (basic - you can integrate with a backend service)
+    const scriptURL = ''; // Add your Google Sheets script URL here if needed
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        if (scriptURL) {
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.innerHTML = "Error sending message. Please try again.";
+                });
+        } else {
+            // Fallback: just show success message
+            msg.innerHTML = "Thank you for your message! I'll get back to you soon.";
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        }
+    });
+
+    // Add scroll effect to header
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('header');
+        if (window.scrollY > 100) {
+            header.style.opacity = '0.95';
+        } else {
+            header.style.opacity = '1';
+        }
+    });
+
+</script>
+
+</body>
+</html>
